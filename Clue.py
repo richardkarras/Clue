@@ -13,9 +13,9 @@ flagWeapon = False #flag for correct weapon selected
 #no flag for room since the rfid sensor will be behind the room on the game board
 #relay object - does it need to be a variable? 
 
-while const == 1
+while const == 1:
     while counter < counterMax:
-        counter++
+        counter+1
         tagIn = ser.readline()
         file = open("person.txt","r")
         fileIn = file.readline()
